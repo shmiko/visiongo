@@ -1,0 +1,8 @@
+<div>
+    <h2>Location Map - {{vm.location.name}}</h2>
+
+    <ui-gmap-google-map center="vm.map.center" zoom="vm.map.zoom">
+        <ui-gmap-marker idKey="vm.marker.id" coords="vm.marker.coords" options="vm.marker.options"></ui-gmap-marker>
+    </ui-gmap-google-map>
+
+</div>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="no-js" ng-app="eliteApp">
+<head>
+    <meta charset="utf-8">
+    <title>CalMapIt</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.united.min.css"/>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<b>
+<div id="applicationHost" class="container body-content admin-appHost">
+    <div data-ng-include="'/app-user/layout/shell.html'"></div>
+    <div ui-view></div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <span class="pull-right text-info credit">CalMapIt - &copy; Paul Jones</span>
+    </div>
+</div>
+
+<!-- Vendor Scripts -->
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/jquery-ui/ui/jquery-ui.js"></script>
+<!--<script src="lib/ace-builds/src-min-noconflict/ace.js"></script>-->
+<script src="lib/angular/angular.min.js"></script>
+<!--<script src="lib/angular-sanitize/angular-sanitize.min.js"></script>-->
+<!--<script src="lib/angular-route/angular-route.min.js"></script>-->
+<script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="lib/lodash/dist/lodash.min.js"></script>
+<script src="lib/moment/min/moment.min.js"></script>
+<script src="lib/spin.js/spin.js"></script>
+<script src="lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+<!--<script src="lib/angular-ui-calendar/src/calendar.js"></script>-->
+<!--<script src="lib/fullcalendar/fullcalendar.min.js"></script>-->
+<script src="lib/angular-google-maps/dist/angular-google-maps.min.js"></script>
+<!--<script src="lib/angular-ui-ace/ui-ace.min.js"></script>-->
+<script src="lib/showdown/compressed/showdown.js"></script>
+<!--<script src="lib/angular-ui-grid/ui-grid.min.js"></script>-->
+<!--<script src="lib/csv-js/csv.js"></script>-->
+<!--<script src="lib/angular-ui-select/dist/select.min.js"></script>-->
+<!--<script src="lib/angular-ui-alias/src/alias.js"></script>-->
+
+<!-- inject:js -->
+<script src="app-user/app.js"></script>
+<script src="app-user/directives/markdown.directive.js"></script>
+<script src="app-user/directives/spinner.directive.js"></script>
+<script src="app-user/home/home.controller.js"></script>
+<script src="app-user/layout/shell.controller.js"></script>
+<!--<script src="app-user/locations/locations.controller.js"></script>-->
+<script src="app-user/leagues/leagues.controller.js"></script>
+
+<script src="app-user/services/app-spinner.service.js"></script>
+<script src="app-user/services/elite-api.service.js"></script>
+<script src="app-user/teams/teams.controller.js"></script>
+<script src="app-user/teams/team-schedule.controller.js"></script>
+<script src="app-user/locations/locations.controller.js"></script>
+<script src="app-user/locations/location-map.controller.js"></script>
+<!-- endinject -->
+
+
+</body>
+</html>

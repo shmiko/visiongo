@@ -1,0 +1,27 @@
+<div>
+    <h2 class="page-title">Trips</h2>
+    <h3>Click on a trip below to view schedule by trip.</h3>
+
+    <div class="container">
+        <div ng-repeat="division in vm.divisions">
+            <h3>Destination: {{division.divisionName}}</h3>
+
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Trip</th>
+                    <th>Carrier</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="team in division.teams">
+                    <td>
+                        <a class="btn btn-link" ui-sref="app.team-schedule({ id: team.id })">{{team.name}}</a>
+                    </td>
+                    <td>{{team.coach}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

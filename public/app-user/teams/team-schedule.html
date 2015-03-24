@@ -1,0 +1,28 @@
+<div>
+    <h2>Trip Schedule - {{vm.currentTeam.name}}</h2>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th></th>
+            <th>Organiser</th>
+            <th>Location</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="game in vm.teamGames">
+            <td>{{game.time | date:'M/d/yyyy'}}</td>
+            <td>{{game.time | date:'shortTime'}}</td>
+            <td>{{game.homeAway}}</td>
+            <td>
+                <a ui-sref="app.team-schedule({ id: game.opponentId })">{{game.opponent}}</a>
+            </td>
+            <td>
+                <a ui-sref="app.location-map({ id: game.locationId })">{{game.locationName}}</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

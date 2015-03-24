@@ -1,0 +1,10 @@
+<div>
+    <h2 class="page-title">Locations</h2>
+    <h3>Click on a location below to view schedule by location.</h3>
+
+    <div class="container">
+        <div class="row" ng-repeat="location in vm.locations | orderBy:'name'">
+            <a ui-sref="app.location-map({ id: location.id })">{{location.name}}</a>
+        </div>
+    </div>
+</div>

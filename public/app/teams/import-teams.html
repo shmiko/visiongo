@@ -1,0 +1,20 @@
+<div class="modal-header">
+    <h2>Import Trips</h2>
+    <alert type="info">
+        Click the menu button in the upper right of the grid and import your CSV file.
+        The CSV file must have these column headings in this order:
+        1) "Trip Name", 2) "Carrier", 3) "Destination".
+        You can then freely edit the data in the grid as desired.
+        Then click Import button to save the data.
+    </alert>
+</div>
+<div class="modal-body">
+
+    <div ui-grid="vm.gridOptions" ui-grid-importer ui-grid-edit ui-grid-resize-columns class="import-grid"></div>
+
+
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="vm.importData()">Import</button>
+    <button class="btn btn-default" ng-click="vm.cancel()">Cancel</button>
+</div>

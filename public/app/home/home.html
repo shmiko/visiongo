@@ -1,0 +1,52 @@
+<div>
+    <h2 class="page-title">Admin Home</h2>
+
+    <div class="jumbotron">
+        <div>
+            <p>
+                To start using CalMapIt, configure your <a href="#/leagues">Trips</a> first. Once you select your Trip, you will configure
+                <span class="bold-text">Events</span> and <span class="bold-text">Place to Go</span> for your trip.
+            </p>
+            <p>
+                <a href="#/locations">Locations</a> are shared across trips.
+            </p>
+        </div>
+    </div>
+
+    <p>
+        <button class="btn btn-info" ng-click="vm.notesCollapsed = !vm.notesCollapsed"
+                popover="Click here for additional information" popover-trigger="mouseenter"
+                popover-placement="right">
+            Additional Notes
+        </button>
+    </p>
+    <div collapse="vm.notesCollapsed">
+        <div class="well in">
+            <h4>Helpful tips:</h4>
+            <ul>
+                <li>Use the Home tab to create helpful announcement for users to stay up-to-date.</li>
+                <li>It's good to configure Locations early in the process since you'll need to assign Locations for each trip.</li>
+                <li>After creating events, you can always go back and change the start time.</li>
+            </ul>
+
+            <h4>Screens:</h4>
+            <dl class="dl-horizontal">
+                <dt>Home</dt>
+                <dd>Basic Home screen</dd>
+                <dt>Trips</dt>
+                <dd>This is your main starting point for Configuration.</dd>
+                <dt>Locations</dt>
+                <dd>Configure Locations which can be shared across trips.</dd>
+                <dt>Trip Configuration</dt>
+                <dd>
+                    Configuration consists of:
+                    <ol>
+                        <li>Home screen</li>
+                        <li>Trips</li>
+                        <li>Events</li>
+                    </ol>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
