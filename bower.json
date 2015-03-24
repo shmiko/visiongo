@@ -1,12 +1,12 @@
 {
-  "name": "MultiVision",
+  "name": "MultiVisiongo",
   "version": "0.0.0",
   "authors": [
-    "joeeames <joeeames@gmail.com>"
+    "Paul Jones"
   ],
-  "description": "\"Extreme Tech Training\"",
+  "description": "\"calmapit\"",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {
     "jquery": "~2.1.1",
     "toastr": "~2.0.2",
