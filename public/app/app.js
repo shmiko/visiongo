@@ -25,6 +25,9 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
       .when('/courses', { templateUrl: '/partials/courses/course-list',
         controller: 'mvCourseListCtrl'
       })
+      .when('/customer', { templateUrl: '/customers/views/customer-list-template.html',
+        controller: 'CustomersController'
+      })
 
 });
 
