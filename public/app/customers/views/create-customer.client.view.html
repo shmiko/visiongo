@@ -1,0 +1,120 @@
+ <section data-ng-controller="CustomersCreateController as customerCreateCtrl">
+    <div class="modal-header">
+        <h3 class="modal-title">New Customer</h3>
+    </div>
+    <div class="modal-body">
+        <form name="createCustomerForm">
+            <fieldset>
+                <div class="row">
+                    <div class="form-group">
+                        <div data-ng-show="error" class="text-danger text-center">
+                            <div class="alert alert-danger" role="alert">
+                                <strong data-ng-bind="error"></strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 text-center">
+                        <i class="glyphicon glyphicon-user customer-profile"
+                           ng-class="{'text-primary': customerCreateCtrl.referred, 'text-purple': !customerCreateCtrl.referred}"></i>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="control-label" for="firstName">First Name</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="customerCreateCtrl.firstName" id="firstName" class="form-control" placeholder="First Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="surname">Surname</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="customerCreateCtrl.surname" id="surname" class="form-control" placeholder="Surname" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="street1">Street</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="customerCreateCtrl.street1" id="street1" class="form-control" placeholder="Street" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="street2">Street</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="customerCreateCtrl.street2" id="street2" class="form-control" placeholder="Street2" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="suburb">Suburb</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="customerCreateCtrl.suburb" id="suburb" class="form-control" placeholder="Suburb" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="postcode">Postcode</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="customerCreateCtrl.postcode" id="postcode" class="form-control" placeholder="Postcode/Zip" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-push-6">
+                        <div class="form-group">
+                            <label class="control-label" for="state">State</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="customerCreateCtrl.state" id="state" class="form-control" placeholder="State" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="country">Country</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="customerCreateCtrl.country" id="country" class="form-control" placeholder="Country" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="email">Email</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="customerCreateCtrl.email" id="email" class="form-control" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="phone">Phone</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="customerCreateCtrl.phone" id="phone" class="form-control" placeholder="Phone" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-pull-6">
+                        <div class="form-group">
+                            <label class="control-label" for="referred">Referred</label>
+                            <div class="controls">
+                                <input type="checkbox" data-ng-model="customerCreateCtrl.referred" id="referred" class="form-control checkbox-left" placeholder="Referred" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="channel">Channel</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="customerCreateCtrl.channel" id="channel" class="form-control" placeholder="Channel" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="industry">Industry</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="customerCreateCtrl.industry" id="industry" class="form-control" placeholder="Industry" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="type">Type</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="customerCreateCtrl.type" id="type" class="form-control" placeholder="Type" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-success btn-lg" ng-click="customerCreateCtrl.create(); ok()" ng-disabled="createCustomerForm.$invalid">Save & Close</button>
+        <button class="btn btn-warning btn-lg" ng-click="cancel()">Cancel</button>
+    </div>
+</section>

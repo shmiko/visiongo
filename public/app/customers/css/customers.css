@@ -1,0 +1,62 @@
+.customer-profile{
+    font-size: 250px;
+}
+
+.customer-list{
+	font-size: 150px;
+}
+
+.customer-list-surround-space{
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.customer-box{
+	padding: 5px,5px;
+}
+
+.search-bar{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.field-padding{
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 98%;
+}
+
+.pad-right-10{
+	padding: 10px;
+	margin-left: 10px;
+}
+
+.pad-right-5{
+	padding: 5px;
+	margin-left: 5px;
+}
+
+.button-drop{
+	margin-top: 5px;
+}
+
+.checkbox-left{
+    width: 10%;
+    text-align: left;
+}
+
+.edit-control{
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+}
+
+.text-purple{
+	color: purple;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	margin: 0 0 0;
+}
