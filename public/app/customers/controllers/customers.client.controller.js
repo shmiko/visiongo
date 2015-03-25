@@ -16,7 +16,7 @@ tripstompApp.controller('CustomersController', ['$scope', '$stateParams', '$loca
 
 		    var modalInstance = $modal.open({
 		    	//this template url raltes to the client routes found in customers/config edit customer
-			    templateUrl: 'modules/customers/views/create-customer.client.view.html',
+			    templateUrl: 'app/customers/views/create-customer.client.view.html',
 			    controller: function($scope, $modalInstance){
 			    	
 
@@ -44,7 +44,7 @@ tripstompApp.controller('CustomersController', ['$scope', '$stateParams', '$loca
 
 		    var modalInstance = $modal.open({
 		    	//this template url raltes to the client routes found in customers/config edit customer
-			    templateUrl: 'modules/customers/views/edit-customer.client.view.html',
+			    templateUrl: 'app/customers/views/edit-customer.client.view.html',
 			    controller: function($scope, $modalInstance, customer){
 			    	$scope.customer = customer;
 
@@ -157,7 +157,7 @@ tripstompApp.directive('customerList', ['Customers', 'Notify', function(Customer
 	return {
 		restrict: 'E',
 		transclude: true,
-		templateUrl: 'modules/customers/views/customer-list-template.html',
+		templateUrl: 'app/customers/views/customer-list-template.html',
 		link: function(scope,element,attrs){
 			//Update customer list when new customer is added
 			Notify.getMsg('NewCustomer', function(event, data){
